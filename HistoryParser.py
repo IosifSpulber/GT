@@ -120,11 +120,8 @@ def calculateEV(startTier):
         # 1 bounty
         wonWhenBust += loseBountiesRates[1] * (bountyCashFactor * initialBounty)
 
-        # 2 bounties (two equally probable choices)
-        # 2 initial bounties
-        wonWhenBust += loseBountiesRates[2] * 0.5 * (2 * bountyCashFactor * initialBounty)
-        # 1 initial bounty + 1 from someone who knocked a player out
-        wonWhenBust += loseBountiesRates[2] * 0.5 * (bountyCashFactor * initialBounty + bountyCashFactor * (initialBounty + (1 - bountyCashFactor) * initialBounty))
+        # 2 bounties (initial bounties)
+        wonWhenBust += loseBountiesRates[2] * (2 * bountyCashFactor * initialBounty)
 
         ###############################
         # Winnings when winning table #
@@ -132,17 +129,13 @@ def calculateEV(startTier):
 
         wonWhenWon = 0
 
-        # 1 bounty
-        wonWhenWon += winBountiesRates[1] * (bountyCashFactor * initialBounty)
-        ownBounty += winBountiesRates[1] * ((1 - bountyCashFactor) * initialBounty)
+        # 1 bounty from someone who knocked two other players out
+        wonWhenWon += winBountiesRates[1] * (bountyCashFactor * (initialBounty + 2 * (1 - bountyCashFactor) * initialBounty))
+        ownBounty += winBountiesRates[1] * ((1 - bountyCashFactor) * (initialBounty + 2 * (1 - bountyCashFactor) * initialBounty))
 
-        # 2 bounties (two equally probable choices)
-        # 2 initial bounties
-        wonWhenWon += winBountiesRates[2] * 0.5 * (2 * bountyCashFactor * initialBounty)
-        ownBounty += winBountiesRates[2] * 0.5 * (2 * (1 - bountyCashFactor) * initialBounty)
-        # 1 initial bounty + 1 from someone who knocked a player out
-        wonWhenWon += winBountiesRates[2] * 0.5 * (bountyCashFactor * initialBounty + bountyCashFactor * (initialBounty + (1 - bountyCashFactor) * initialBounty))
-        ownBounty += winBountiesRates[2] * 0.5 * ((1 - bountyCashFactor) * initialBounty + (1 - bountyCashFactor) * (initialBounty + (1 - bountyCashFactor) * initialBounty))
+        # 2 bounties : 1 initial bounty + 1 from someone who knocked a player out
+        wonWhenWon += winBountiesRates[2] * (bountyCashFactor * initialBounty + bountyCashFactor * (initialBounty + (1 - bountyCashFactor) * initialBounty))
+        ownBounty += winBountiesRates[2] * ((1 - bountyCashFactor) * initialBounty + (1 - bountyCashFactor) * (initialBounty + (1 - bountyCashFactor) * initialBounty))
 
         # 3 bounties
         wonWhenWon += winBountiesRates[3] * (3 * bountyCashFactor * initialBounty)
