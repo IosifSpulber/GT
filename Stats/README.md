@@ -44,7 +44,7 @@ Select everything that's been filtered, not including the headers (should be fro
 
 Go to the `GT.xlsx` spreadsheet now. It already has some sample data. Clear it to make way for the new one.
 
-Select all the similar looking block (as per the headers in the raw audit) - up to *"Cummulative"*. After all is selected, press **Delete**.
+Select all of the similar looking block (as per the headers in the raw audit) - up to *"Cummulative"*. After all is selected, press **Delete**.
 
 ![Turning on filter](img/delete.PNG)
 
@@ -71,6 +71,14 @@ Once located, do the same as for the *"Cummulative"* column: delete everything b
 ![Turning on filter](img/slices.PNG)
 
 You should now see the graphs updated accordingly.
+
+## Extra Bounties -> chips sheet
+
+You can find it in the *"BountyChips"* sheet.
+
+You can input the initial + current bounties for each player, and get the chips equivalent. With it, you can estimate the odds you need to call as for normal chip amounts.
+
+If you need to quickly do the ratio for the odds, fill in the *"Pot"* field and how much you still need to call them.
 
 ## Feedback and contributions
 
