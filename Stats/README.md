@@ -46,7 +46,7 @@ Go to the `GT.xlsx` spreadsheet now. It already has some sample data. Clear it t
 
 Select all the similar looking block (as per the headers in the raw audit) - up to *"Cummulative"*. After all is selected, press **Delete**.
 
-![Turning on filter](img/delete.png)
+![Turning on filter](img/delete.PNG)
 
 Select the (now empty) cell just below *"Action"* in our sheet. Now right click and **Paste**, but use only *"Values"*:
 
@@ -68,7 +68,7 @@ To do the same for the win rate and bounties / game graphs, look for the formula
 
 Once located, do the same as for the *"Cummulative"* column: delete everything below the first row, select the row, and apply it to the block with the lower-right square:
 
-![Turning on filter](img/slices.png)
+![Turning on filter](img/slices.PNG)
 
 You should now see the graphs updated accordingly.
 
