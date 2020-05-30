@@ -16,5 +16,5 @@ The data required is the PokerStars player audit. You can request it from the cl
 
 You should receive the spreadsheet in an email shortly.
 
-![Requesting PokerStars audit file](https://github.com/IosifSpulber/GT/blob/master/Stats/img/audit.png "Requesting PokerStars audit file")
+![Requesting PokerStars audit file](img/audit.PNG)
 
