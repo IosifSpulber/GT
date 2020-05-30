@@ -32,7 +32,7 @@ Click on the cell called *"Action"*, and then on *"Sort & Filter"* and select *"
 
 You should now see the filter icon on the top cells; click on the one for the *"Action"* column, and in the text box type *"Pool"* (all GT-related actions seem to have this in their name):
 
-![Turning on filter](img/pool.png)
+![Applying filter](img/pool.png)
 
 Now, we'll copy this (raw) data and use it in the spreadsheet.
 
@@ -46,11 +46,11 @@ Go to the `GT.xlsx` spreadsheet now. It already has some sample data. Clear it t
 
 Select all of the similar looking block (as per the headers in the raw audit) - up to *"Cummulative"*. After all is selected, press **Delete**.
 
-![Turning on filter](img/delete.PNG)
+![Clearing old rows](img/delete.PNG)
 
 Select the (now empty) cell just below *"Action"* in our sheet. Now right click and **Paste**, but use only *"Values"*:
 
-![Turning on filter](img/paste.png)
+![Pasting](img/paste.png)
 
 ## Applying formulas
 
@@ -60,7 +60,7 @@ Go to the *"Cummulative"* row. Delete everything but the first row. Select the f
 
 To apply the formula to the entire block, note the green square in the lower-right corner of the selection. Double click it:
 
-![Turning on filter](img/apply.png)
+![Applying formulas](img/apply.png)
 
 The $ graph should now be updated.
 
@@ -68,7 +68,7 @@ To do the same for the win rate and bounties / game graphs, look for the formula
 
 Once located, do the same as for the *"Cummulative"* column: delete everything below the first row, select the row, and apply it to the block with the lower-right square:
 
-![Turning on filter](img/slices.PNG)
+![Applying for the slices formulas](img/slices.PNG)
 
 You should now see the graphs updated accordingly.
 
