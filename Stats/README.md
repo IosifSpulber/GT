@@ -42,35 +42,13 @@ Select everything that's been filtered, not including the headers (should be fro
 
 ## Replacing data with your own
 
-Go to the `GT.xlsx` spreadsheet now. It already has some sample data. Clear it to make way for the new one.
-
-Select all of the similar looking block (as per the headers in the raw audit) - up to *"Cummulative"*. After all is selected, press **Delete**.
-
-![Clearing old rows](img/delete.PNG)
-
-Select the (now empty) cell just below *"Action"* in our sheet. Now right click and **Paste**, but use only *"Values"*:
+Select the A2 cell with the placeholder text in our sheet. Now right click and **Paste**, but use only *"Values"*:
 
 ![Pasting](img/paste.png)
 
-## Applying formulas
+The stats + graphs should update automatically.
 
-The last step is to apply the existing formulas to the new data.
-
-Go to the *"Cummulative"* row. Delete everything but the first row. Select the first row.
-
-To apply the formula to the entire block, note the green square in the lower-right corner of the selection. Double click it:
-
-![Applying formulas](img/apply.png)
-
-The $ graph should now be updated.
-
-To do the same for the win rate and bounties / game graphs, look for the formulas in the next four columns. They're a bit below, since they have to start at the first 200 slice.
-
-Once located, do the same as for the *"Cummulative"* column: delete everything below the first row, select the row, and apply it to the block with the lower-right square:
-
-![Applying for the slices formulas](img/slices.PNG)
-
-You should now see the graphs updated accordingly.
+Feel free to tinker with the visualisation - i.e., your data set size might allow for better graphs.
 
 ## Extra Bounties -> chips sheet
 
